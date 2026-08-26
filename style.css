@@ -64,3 +64,17 @@ a:hover { text-decoration: underline; }
     border-radius: 8px;
     margin-top: 40px;
 }
+
+.cover-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cover-image {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
+}
