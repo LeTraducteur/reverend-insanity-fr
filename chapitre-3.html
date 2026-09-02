@@ -13,7 +13,7 @@
             <nav class="nav-top">
                 <a href="chapitre-2.html" class="btn-nav">Précédent</a>
                 <a href="index.html" class="btn-nav">Accueil</a>
-                <a href="chapitre-4.html" class="btn-nav">Suivant</a>
+                <span class="btn-nav disabled">Suivant</span>
             </nav>
         </header>
 
@@ -63,21 +63,16 @@
                     </div>
                 </div>
 
-                <!-- Section Commentaires Disqus -->
+                <!-- Section Commentaires Cusdis -->
                 <hr style="margin: 40px 0; border: 0; border-top: 1px solid #333;">
-                <div id="disqus_thread"></div>
-                <script>
-                    var disqus_config = function () {
-                        this.page.url = window.location.href;  
-                        this.page.identifier = window.location.pathname; 
-                    };
-                    (function() { 
-                        var d = document, s = d.createElement('script');
-                        s.src = 'https://TON-NOM-DISQUS.disqus.com/embed.js'; 
-                        s.setAttribute('data-timestamp', +new Date());
-                        (d.head || d.body).appendChild(s);
-                    })();
-                </script>
+                <div id="cusdis_thread"
+                  data-host="https://cusdis.com"
+                  data-app-id="0400387f-9daa-413e-a461-495c8361c09e"
+                  data-page-id="chapitre-3"
+                  data-page-url="https://reverend-insanity-fr.vercel.app/chapitre-3.html"
+                  data-page-title="Chapitre 3 : La cérémonie d'éveil"
+                ></div>
+                <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
             </article>
         </main>
@@ -86,7 +81,7 @@
             <nav class="nav-bottom">
                 <a href="chapitre-2.html" class="btn-nav">Précédent</a>
                 <a href="index.html" class="btn-nav">Accueil</a>
-                <a href="chapitre-4.html" class="btn-nav">Suivant</a>
+                <span class="btn-nav disabled">Suivant</span>
             </nav>
         </footer>
     </div>
