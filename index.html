@@ -7,42 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Reverend Insanity (FR)</h1>
-        <p>Traduction et Édition Soignées</p>
-    </header>
 
-    <main class="container">
-        <!-- Image de couverture / Bannière -->
-        <div class="cover-container">
-            <img src="cover.jpg" alt="Reverend Insanity Cover" class="cover-image">
-        </div>
+    <div class="container">
+        <header>
+            <h1>Reverend Insanity</h1>
+            <p>Traduction Française Officieuse & Soignée</p>
+        </header>
 
-        <section class="synopsis">
-            <h2>À propos du Roman</h2>
-            <p>Les humains sont l'esprit de toutes les créatures, les Gu sont l'essence du ciel et de la terre.</p>
-            <p>Trois mille ans d'histoire, des intrigues sanglantes et la recherche de la vie éternelle. Suivez l'histoire de Fang Yuan, un démon renaissant 500 ans dans le passé grâce au Gu Cigale du Printemps et de l'Automne, prêt à tout sacrifier pour atteindre le sommet du monde des Immortels Gu.</p>
-        </section>
-
-        <section class="chapters-list">
-            <h2>Liste des Chapitres</h2>
-            <ul id="list">
-                <li><a href="chapitre-1.html">Chapitre 1 : Le cœur d'un démon ne regrette jamais</a></li>
-                <li><a href="chapitre-2.html">Chapitre 2 : L'histoire de deux vies</a></li>
-                <li><a href="chapitre-3.html">Chapitre 3 : Veuillez simplement vous pousser et dégager le chemin</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <div class="monetization-box">
-            <h3>Soutenir la traduction</h3>
-            <p>Si vous appréciez la qualité de cette version française, vous pouvez soutenir le projet :</p>
-            <div class="support-links">
-                <a href="https://ko-fi.com/TON_PSEUDO" target="_blank" class="btn-kofi">☕ Offrir un café sur Ko-fi</a>
-                <a href="https://paypal.me/TON_PSEUDO" target="_blank" class="btn-paypal">💳 Soutenir via PayPal</a>
+        <main>
+            <!-- Carte du roman avec la couverture -->
+            <div class="novel-header-card">
+                <img src="cover.jpg" alt="Reverend Insanity Cover" class="cover-image">
+                <div class="synopsis-content">
+                    <h2>À propos du roman</h2>
+                    <div class="tags">
+                        <span class="badge">Xianxia</span>
+                        <span class="badge">Réincarnation</span>
+                        <span class="badge">En cours</span>
+                    </div>
+                    <p>Les humains sont l'esprit de toutes les créatures, les Gu sont l'essence du ciel et de la terre.</p>
+                    <p>Trois mille ans d'histoire, des intrigues sanglantes et la recherche de la vie éternelle. Suivez l'histoire de Fang Yuan, un démon renaissant 500 ans dans le passé grâce au Gu Cigale du Printemps et de l'Automne, prêt à tout sacrifier pour atteindre le sommet du monde des Immortels Gu.</p>
+                </div>
             </div>
-        </div>
-    </footer>
+
+            <!-- Liste des chapitres sous forme de cartes d'accès rapide -->
+            <section class="chapters-section">
+                <h2>📖 Liste des Chapitres</h2>
+                <div class="chapters-grid">
+                    <a href="chapitre-1.html" class="chapter-card">
+                        <span class="chapter-title">Chapitre 1 : Le cœur d'un démon ne regrette jamais</span>
+                        <span class="read-btn">Lire</span>
+                    </a>
+                    <a href="chapitre-2.html" class="chapter-card">
+                        <span class="chapter-title">Chapitre 2 : L'histoire de deux vies</span>
+                        <span class="read-btn">Lire</span>
+                    </a>
+                    <a href="chapitre-3.html" class="chapter-card">
+                        <span class="chapter-title">Chapitre 3 : Veuillez simplement vous pousser et dégager le chemin</span>
+                        <span class="read-btn">Lire</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
 </body>
 </html>
