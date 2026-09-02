@@ -6,30 +6,35 @@
     <title>Chapitre 1 - Revered Insanity</title>
     <style>
         :root {
-            --bg-color: #f4f1ea;
-            --text-color: #2b2b2b;
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
             --card-bg: #ffffff;
-            --accent-color: #8b0000;
-            --border-color: #e0dace;
-            --note-bg: #f9f7f1;
+            --accent-color: #900c3f;
+            --border-color: #dee2e6;
+            --note-bg: #f1f3f5;
+            --btn-bg: #f8f9fa;
+            --btn-hover: #e9ecef;
         }
 
         body.dark-theme {
             --bg-color: #121212;
-            --text-color: #e0e0e0;
+            --text-color: #d1d5db;
             --card-bg: #1e1e1e;
-            --accent-color: #ff4d4d;
+            --accent-color: #e63946;
             --border-color: #333333;
-            --note-bg: #181818;
+            --note-bg: #2a2a2a;
+            --btn-bg: #2a2a2a;
+            --btn-hover: #3a3a3a;
         }
 
         body {
-            font-family: 'Georgia', 'Times New Roman', serif;
+            font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.8;
+            line-height: 2;
+            font-size: 1.1rem;
             margin: 0;
-            padding: 20px;
+            padding: 20px 10px;
             transition: background-color 0.3s, color 0.3s;
         }
 
@@ -38,14 +43,14 @@
             margin: 0 auto;
             background-color: var(--card-bg);
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
             border: 1px solid var(--border-color);
         }
 
         .header {
             text-align: center;
-            border-bottom: 2px solid var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
             padding-bottom: 20px;
             margin-bottom: 30px;
         }
@@ -53,25 +58,54 @@
         h1 {
             color: var(--accent-color);
             font-size: 1.8rem;
-            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        .nav-top, .nav-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            gap: 10px;
+        }
+
+        .btn-nav {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: var(--btn-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-family: sans-serif;
+            transition: background 0.2s;
+        }
+
+        .btn-nav:hover {
+            background-color: var(--btn-hover);
+        }
+
+        .btn-disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
         }
 
         .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--card-bg);
+            background: var(--btn-bg);
             border: 1px solid var(--border-color);
             color: var(--text-color);
             padding: 8px 12px;
-            border-radius: 20px;
+            border-radius: 4px;
             cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 0.9rem;
         }
 
-        .content p {
-            margin-bottom: 1.2em;
+        .chapitre-content p {
+            margin-bottom: 1.5em;
             text-align: justify;
+            text-justify: inter-word;
         }
 
         .dialogue {
@@ -79,9 +113,10 @@
         }
 
         .poem {
-            margin: 1.5em 0;
-            padding-left: 20px;
-            border-left: 3px solid var(--accent-color);
+            margin: 2em 0;
+            padding: 15px 20px;
+            border-left: 4px solid var(--accent-color);
+            background-color: var(--note-bg);
             font-style: italic;
         }
 
@@ -92,6 +127,7 @@
             border-left: 4px solid var(--accent-color);
             border-radius: 4px;
             font-size: 0.95rem;
+            font-family: sans-serif;
         }
 
         .translation-notes h3 {
@@ -109,30 +145,25 @@
             text-align: center;
             margin-bottom: 30px;
         }
-
-        .nav-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        .btn-nav {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
 
-    <button class="theme-toggle" onclick="toggleTheme()">🌓 Thème</button>
-
     <div class="container">
+        
+        <!-- Navigation Haute -->
+        <div class="nav-top">
+            <a href="#" class="btn-nav btn-disabled">← Précédent</a>
+            <a href="index.html" class="btn-nav">≡ Sommaire</a>
+            <button class="theme-toggle" onclick="toggleTheme()">🌓 Thème</button>
+            <a href="chapitre-2.html" class="btn-nav">Suivant →</a>
+        </div>
+
         <div class="header">
             <h1>Chapitre 1 : Le cœur d'un démon ne regrette jamais</h1>
         </div>
 
-        <div class="content">
+        <div class="chapitre-content">
             <p class="dialogue">« Fang Yuan, remets-moi le Gu Cigale du Printemps et de l'Automne sans résister, et tu auras droit à une mort rapide ! »</p>
             <p class="dialogue">« Fang, vieux salopard, arrête de lutter ! Aujourd'hui, toutes les principales factions de la justice se sont réunies pour détruire ton antre démoniaque. Cet endroit est encerclé de filets incontournables, cette fois tu seras définitivement décapité ! »</p>
             <p class="dialogue">« Fang Yuan, espèce de démon ! Parce que tu voulais raffiner le Gu Cigale du Printemps et de l'Automne, tu as massacré des millions de personnes. Tu as commis trop de péchés impardonnables ! »</p>
@@ -148,7 +179,7 @@
             <p>Les principales factions de la justice qui l’avaient entouré n’étaient pas seulement composées d'aînés expérimentés, mais aussi de jeunes héros talentueux. Autour de Fang Yuan, certains rugissaient, d’autres ricanaient ; il y avait des yeux qui brillaient de fureur, et d’autres qui fixaient leurs blessures avec crainte.</p>
             <p>Ils ne bougeaient pas ; tout le monde se méfiait du coup d'éclat final de Fang Yuan.</p>
             <p>Ce moment tendu dura jusqu’au soir, lorsque le soleil projeta ses derniers rayons sur le flanc de la montagne. À cet instant, c’était comme si toute la zone était en feu.</p>
-            <p>Fang Yuan, qui était resté silencieux durant toute cette période, se tourna lentement.</p>
+            <p>Fang Yuan, qui était resté silencieux durant toute cette période, se tourna lentamente.</p>
             <p>Le groupe de guerriers se tint soudain en alerte et tous firent un grand pas en arrière.</p>
             <p>À cet instant, le rocher gris de la montagne sous les pieds de Fang Yuan était depuis longtemps taché d’un rouge profond. En raison de la perte massive de sang, son visage était devenu mortellement pâle ; à la lueur du coucher du soleil, il avait soudainement un éclat brillant.</p>
             <p>En regardant le soleil couchant, Fang Yuan rit doucement et murmura :</p>
@@ -232,10 +263,17 @@
             <p><strong>Gu Yue :</strong> Gu Yue (古月) signifie littéralement « Ancienne Lune » en chinois. Le clan possède ainsi une forte affinité avec la lune. Le caractère chinois utilisé pour le nom « Gu Yue » est différent du caractère chinois utilisé pour désigner les insectes mystiques « Gu » (虫).</p>
         </div>
 
+        <!-- Navigation Basse -->
+        <div class="nav-bottom">
+            <a href="#" class="btn-nav btn-disabled">← Précédent</a>
+            <a href="index.html" class="btn-nav">≡ Sommaire</a>
+            <a href="chapitre-2.html" class="btn-nav">Suivant →</a>
+        </div>
+
         <div class="widgets">
             <div class="kofi-container">
                 <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-                <script type='text/javascript'>kofiwidget2.init('Soutenez-moi sur Ko-fi', '#8b0000', 'YOUR_KOFI_ID');kofiwidget2.draw();</script>
+                <script type='text/javascript'>kofiwidget2.init('Soutenez-moi sur Ko-fi', '#900c3f', 'YOUR_KOFI_ID');kofiwidget2.draw();</script>
             </div>
 
             <div id="cusdis_thread"
