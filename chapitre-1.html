@@ -31,15 +31,15 @@
             font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 2;
-            font-size: 1.1rem;
+            line-height: 2.1;
+            font-size: 1.25rem;
             margin: 0;
             padding: 20px 10px;
             transition: background-color 0.3s, color 0.3s;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             background-color: var(--card-bg);
             padding: 40px;
@@ -57,7 +57,7 @@
 
         h1 {
             color: var(--accent-color);
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin-bottom: 10px;
         }
 
@@ -71,13 +71,13 @@
 
         .btn-nav {
             display: inline-block;
-            padding: 8px 16px;
+            padding: 10px 18px;
             background-color: var(--btn-bg);
             color: var(--text-color);
             text-decoration: none;
             border: 1px solid var(--border-color);
             border-radius: 4px;
-            font-size: 0.95rem;
+            font-size: 1rem;
             font-family: sans-serif;
             transition: background 0.2s;
         }
@@ -96,14 +96,14 @@
             background: var(--btn-bg);
             border: 1px solid var(--border-color);
             color: var(--text-color);
-            padding: 8px 12px;
+            padding: 10px 14px;
             border-radius: 4px;
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
         }
 
         .chapitre-content p {
-            margin-bottom: 1.5em;
+            margin-bottom: 1.6em;
             text-align: justify;
             text-justify: inter-word;
         }
@@ -114,7 +114,7 @@
 
         .poem {
             margin: 2em 0;
-            padding: 15px 20px;
+            padding: 20px;
             border-left: 4px solid var(--accent-color);
             background-color: var(--note-bg);
             font-style: italic;
@@ -126,7 +126,7 @@
             background-color: var(--note-bg);
             border-left: 4px solid var(--accent-color);
             border-radius: 4px;
-            font-size: 0.95rem;
+            font-size: 1rem;
             font-family: sans-serif;
         }
 
@@ -135,15 +135,52 @@
             color: var(--accent-color);
         }
 
-        .widgets {
+        /* Section Tipeee / Top Tipeurs */
+        .tipeur-box {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px dashed var(--accent-color);
+            background-color: var(--note-bg);
+            border-radius: 6px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 1rem;
+        }
+
+        .tipeur-box h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        .tipeur-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tipeur-item {
+            background: var(--card-bg);
+            padding: 6px 12px;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            font-weight: bold;
+        }
+
+        /* Section Commentaires Cusdis */
+        .comments-section {
             margin-top: 50px;
             padding-top: 30px;
             border-top: 1px solid var(--border-color);
+            font-family: sans-serif;
         }
 
-        .kofi-container {
-            text-align: center;
-            margin-bottom: 30px;
+        .comments-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -263,6 +300,17 @@
             <p><strong>Gu Yue :</strong> Gu Yue (古月) signifie littéralement « Ancienne Lune » en chinois. Le clan possède ainsi une forte affinité avec la lune. Le caractère chinois utilisé pour le nom « Gu Yue » est différent du caractère chinois utilisé pour désigner les insectes mystiques « Gu » (虫).</p>
         </div>
 
+        <!-- Section Top Tipeurs / Tipee -->
+        <div class="tipeur-box">
+            <h3>❤️ Top Tipeurs / Soutiens du Projet</h3>
+            <p>Merci infiniment aux passionnés qui soutiennent la traduction de Revered Insanity !</p>
+            <ul class="tipeur-list">
+                <li class="tipeur-item">⭐ LecteurAnonyme</li>
+                <li class="tipeur-item">⭐ FangYuanFan</li>
+                <li class="tipeur-item">⭐ GuMaster99</li>
+            </ul>
+        </div>
+
         <!-- Navigation Basse -->
         <div class="nav-bottom">
             <a href="#" class="btn-nav btn-disabled">← Précédent</a>
@@ -270,21 +318,19 @@
             <a href="chapitre-2.html" class="btn-nav">Suivant →</a>
         </div>
 
-        <div class="widgets">
-            <div class="kofi-container">
-                <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-                <script type='text/javascript'>kofiwidget2.init('Soutenez-moi sur Ko-fi', '#900c3f', 'YOUR_KOFI_ID');kofiwidget2.draw();</script>
-            </div>
-
+        <!-- Espace Commentaires Cusdis -->
+        <div class="comments-section">
+            <h3>💬 Commentaires</h3>
             <div id="cusdis_thread"
               data-host="https://cusdis.com"
-              data-app-id="YOUR_CUSDIS_APP_ID"
-              data-page-id="chapitre-1-fr"
+              data-app-id="0400387f-9daa-413e-a461-495c8361c09e"
+              data-page-id="chapitre-1"
               data-page-url=""
-              data-page-title="Chapitre 1 - FR">
-            </div>
+              data-page-title="Chapitre 1 - Revered Insanity"
+            ></div>
             <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
         </div>
+
     </div>
 
     <script>
