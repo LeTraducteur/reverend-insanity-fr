@@ -18,6 +18,14 @@
         </header>
 
         <main>
+            <!-- Barre d'outils de lecture -->
+            <div class="reader-controls" style="display: flex; justify-content: center; gap: 10px; margin: 20px 0; padding: 10px; background: #1a1a1a; border-radius: 8px; border: 1px solid #333;">
+                <button class="btn-control" onclick="changeFontSize('small')">A- Petit</button>
+                <button class="btn-control" onclick="changeFontSize('medium')">A Moyen</button>
+                <button class="btn-control" onclick="changeFontSize('large')">A+ Grand</button>
+                <button class="btn-control" onclick="toggleTheme()">🌙 / ☀️ Thème</button>
+            </div>
+
             <article class="chapitre-content">
                 <h1>Chapitre 3 : La cérémonie d'éveil</h1>
 
@@ -48,7 +56,7 @@
 
                 <p>La cérémonie allait enfin commencer.</p>
 
-                <!-- Bloc Soutien & Donateurs -->
+                <!-- Bloc Soutien -->
                 <div class="support-section" style="background: #1a1a1a; border: 1px solid #333; padding: 20px; border-radius: 8px; margin: 40px 0; text-align: center;">
                     <h3 style="color: #4da6ff; margin-bottom: 10px;">Vous aimez la traduction ?</h3>
                     <p style="font-size: 0.95em; color: #ccc; margin-bottom: 15px;">Soutenez le projet sur Ko-fi pour débloquer des chapitres en avance et faire vivre le site !</p>
@@ -86,5 +94,30 @@
         </footer>
     </div>
 
+    <!-- Script de personnalisation de la lecture -->
+    <script>
+        function changeFontSize(size) {
+            const content = document.querySelector('.chapitre-content');
+            content.classList.remove('text-small', 'text-medium', 'text-large');
+            content.classList.add('text-' + size);
+            localStorage.setItem('preferred-font-size', size);
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle('light-mode');
+            const isLight = document.body.classList.contains('light-mode');
+            localStorage.setItem('preferred-theme', isLight ? 'light' : 'dark');
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedSize = localStorage.getItem('preferred-font-size') || 'medium';
+            const savedTheme = localStorage.getItem('preferred-theme');
+            
+            changeFontSize(savedSize);
+            if (savedTheme === 'light') {
+                document.body.classList.add('light-mode');
+            }
+        });
+    </script>
 </body>
 </html>
