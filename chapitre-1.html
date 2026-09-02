@@ -3,127 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapitre 1 : Le cœur d'un démon ne regrette jamais</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Chapitre 1 - Revered Insanity</title>
+    <style>
+        :root {
+            --bg-color: #f4f1ea;
+            --text-color: #2b2b2b;
+            --card-bg: #ffffff;
+            --accent-color: #8b0000;
+            --border-color: #e0dace;
+            --note-bg: #f9f7f1;
+        }
+
+        body.dark-theme {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --accent-color: #ff4d4d;
+            --border-color: #333333;
+            --note-bg: #181818;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .content p {
+            margin-bottom: 1.2em;
+            text-align: justify;
+        }
+
+        .dialogue {
+            font-style: italic;
+        }
+
+        .poem {
+            margin: 1.5em 0;
+            padding-left: 20px;
+            border-left: 3px solid var(--accent-color);
+            font-style: italic;
+        }
+
+        .translation-notes {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: var(--note-bg);
+            border-left: 4px solid var(--accent-color);
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .translation-notes h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        .widgets {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .kofi-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .btn-nav {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Thème</button>
+
     <div class="container">
-        <header>
-            <nav class="nav-top">
-                <span class="btn-nav disabled">← Précédent</span>
-                <a href="index.html" class="btn-nav">Sommaire</a>
-                <a href="chapitre-2.html" class="btn-nav">Suivant →</a>
-            </nav>
-        </header>
+        <div class="header">
+            <h1>Chapitre 1 : Le cœur d'un démon ne regrette jamais</h1>
+        </div>
 
-        <main>
-            <div class="reader-controls">
-                <button class="btn-control" onclick="changeFontSize('small')">A-</button>
-                <button class="btn-control" onclick="changeFontSize('medium')">A</button>
-                <button class="btn-control" onclick="changeFontSize('large')">A+</button>
-                <button class="btn-control" onclick="toggleTheme()">🌓 Thème</button>
-            </div>
+        <div class="content">
+            <p class="dialogue">« Fang Yuan, remets-moi le Gu Cigale du Printemps et de l'Automne sans résister, et tu auras droit à une mort rapide ! »</p>
+            <p class="dialogue">« Fang, vieux salopard, arrête de lutter ! Aujourd'hui, toutes les principales factions de la justice se sont réunies pour détruire ton antre démoniaque. Cet endroit est encerclé de filets incontournables, cette fois tu seras définitivement décapité ! »</p>
+            <p class="dialogue">« Fang Yuan, espèce de démon ! Parce que tu voulais raffiner le Gu Cigale du Printemps et de l'Automne, tu as massacré des millions de personnes. Tu as commis trop de péchés impardonnables ! »</p>
+            <p class="dialogue">« Démon, il y a 300 ans, tu m'as souillée, tu as massacré ma famille et exécuté neuf générations ! Depuis ce jour, je te hais d'une passion brûlante ! Aujourd'hui, je veux te voir mourir ! »</p>
+            <p>…</p>
+            <p>Fang Yuan était vêtu d’une robe vert foncé déchirée en lambeaux. Ses cheveux étaient ébouriffés et son corps entier couvert de sang. Il regarda autour de lui.</p>
+            <p>Ses robes sanglantes ondulaient légèrement dans la brise de la montagne comme un drapeau de guerre.</p>
+            <p>Du sang frais coulait des nombreuses blessures sur son corps. En restant là un court moment, Fang Yuan avait déjà accumulé une grande mare de sang sous ses pieds.</p>
+            <p>Des ennemis l’entouraient, il n’y avait plus aucune issue.</p>
+            <p>Il allait mourir ici. C’était une fatalité.</p>
+            <p>Fang Yuan comprenait clairement la situation, mais même face à la mort, son expression ne changea pas. Elle était sereine.</p>
+            <p>Le regard limpide, ses yeux étaient aussi paisibles et profonds que l’eau d’un vieux puits sans fond.</p>
+            <p>Les principales factions de la justice qui l’avaient entouré n’étaient pas seulement composées d'aînés expérimentés, mais aussi de jeunes héros talentueux. Autour de Fang Yuan, certains rugissaient, d’autres ricanaient ; il y avait des yeux qui brillaient de fureur, et d’autres qui fixaient leurs blessures avec crainte.</p>
+            <p>Ils ne bougeaient pas ; tout le monde se méfiait du coup d'éclat final de Fang Yuan.</p>
+            <p>Ce moment tendu dura jusqu’au soir, lorsque le soleil projeta ses derniers rayons sur le flanc de la montagne. À cet instant, c’était comme si toute la zone était en feu.</p>
+            <p>Fang Yuan, qui était resté silencieux durant toute cette période, se tourna lentement.</p>
+            <p>Le groupe de guerriers se tint soudain en alerte et tous firent un grand pas en arrière.</p>
+            <p>À cet instant, le rocher gris de la montagne sous les pieds de Fang Yuan était depuis longtemps taché d’un rouge profond. En raison de la perte massive de sang, son visage était devenu mortellement pâle ; à la lueur du coucher du soleil, il avait soudainement un éclat brillant.</p>
+            <p>En regardant le soleil couchant, Fang Yuan rit doucement et murmura :</p>
 
-            <article class="chapitre-content text-medium" id="chapitre-text">
-                <h1>Chapitre 1 : Le cœur d'un démon ne regrette jamais</h1>
-
-                <p>« Fang Yuan, remets-moi le Gu Cigale du Printemps et de l'Automne sans résister, et tu auras droit à une mort rapide ! »</p>
-                <p>« Fang, vieux salopard, arrête de lutter ! Aujourd'hui, toutes les principales factions de la justice se sont réunies pour détruire ton antre démoniaque. Cet endroit est encerclé de filets incontournables, cette fois tu seras définitivement décapité ! »</p>
-                <p>« Fang Yuan, espèce de démon ! Parce que tu voulais raffiner le Gu Cigale du Printemps et de l'Automne, tu as massacré des millions de personnes. Tu as commis trop de péchés impardonnables ! »</p>
-                <p>« Démon, il y a 300 ans, tu m'as souillée, tu as massacré ma famille et exécuté neuf générations ! Depuis ce jour, je te hais d'une passion brûlante ! Aujourd'hui, je veux te voir mourir ! »</p>
-
-                <p>Fang Yuan était vêtu d’une robe vert foncé déchirée en lambeaux. Ses cheveux étaient ébouriffés et son corps entier couvert de sang. Il regarda autour de lui. Ses robes sanglantes ondulaient légèrement dans la brise de la montagne comme un drapeau de guerre.</p>
-
-                <p>Du sang frais coulait des nombreuses blessures sur son corps. En restant là un court moment, Fang Yuan avait déjà accumulé une grande mare de sang sous ses pieds. Des ennemis l’entouraient, il n’y avait plus aucune issue. Il allait mourir ici. C’était une fatalité.</p>
-
-                <p>Fang Yuan comprenait clairement la situation, mais même face à la mort, son expression ne changea pas. Elle était sereine. Le regard limpide, ses yeux étaient aussi paisibles et profonds que l’eau d’un vieux puits sans fond.</p>
-
-                <p>Les principales factions de la justice qui l’avaient entouré n’étaient pas seulement composées d'aînés expérimentés, mais aussi de jeunes héros talentueux. Autour de Fang Yuan, certains rugissaient, d’autres ricanaient ; il y avait des yeux qui brillaient de fureur, et d’autres qui fixaient leurs blessures avec crainte. Ils ne bougeaient pas ; tout le monde se méfiait du coup d'éclat final de Fang Yuan.</p>
-
-                <p>Ce moment tendu dura jusqu’au soir, lorsque le soleil projeta ses derniers rayons sur le flanc de la montagne. À cet instant, c’était comme si toute la zone était en feu. Fang Yuan, qui était resté silencieux durant toute cette période, se tourna lentement. Le groupe de guerriers se tint soudain en alerte et tous firent un grand pas en arrière.</p>
-
-                <p>À cet instant, le rocher gris de la montagne sous les pieds de Fang Yuan était depuis longtemps taché d’un rouge profond. En raison de la perte massive de sang, son visage était devenu mortellement pâle ; à la lueur du coucher du soleil, il avait soudainement un éclat brillant.</p>
-
-                <p>En regardant le soleil couchant, Fang Yuan rit doucement et murmura :</p>
+            <div class="poem">
                 <p>« Coucher de soleil sur les monts verdoyants, lune d'automne dans la brise printanière.<br>
                 La soie noire du matin devient la neige du soir…<br>
                 Le bien ou le mal, le succès ou l'échec, tout se dissout dans le vide en un regard en arrière. »</p>
+            </div>
 
-                <p>Alors qu’il disait cela, les souvenirs de sa vie passée sur Terre apparurent devant ses yeux. Il était à l’origine un érudit chinois qui avait transmigré dans ce monde. Il avait enduré une vie difficile pendant 300 ans et avait traversé 200 autres années de domination. Plus de cinq cents ans de sa vie s'étaient écoulés en un clin d’œil.</p>
-
-                <p>Tant de souvenirs enfouis au plus profond de son cœur recommencèrent à revivre, reprenant forme sous ses yeux.</p>
-
-                <p>« J’ai échoué à la fin », soupira Fang Yuan intérieurement, mais il n’avait aucun regret. Ce résultat final était quelque chose qu’il avait prévu. Quand il avait pris sa décision au début, il s’était préparé à cela.</p>
-
-                <p>Être un démon, c’est être impitoyable et cruel, un meurtrier et un destructeur. Il n’y a pas de place dans les Cieux ou sur la Terre pour une telle chose — se transformer en un ennemi du monde implique de faire face aux conséquences.</p>
-
-                <p>« Si le Gu Cigale du Printemps et de l'Automne que je viens de raffiner fonctionne, alors je serai encore un démon dans ma prochaine vie ! » À cette pensée, Fang Yuan ne put s’empêcher de rire d'un air sauvage.</p>
-
-                <p>« Vil démon, qu’est-ce qui te fait rire ? »</p>
-                <p>« Faites attention tout le monde, le démon va attaquer dans ses derniers instants ! »</p>
-                <p>« Dépêchez-vous de rendre le Gu Cigale du Printemps et de l'Automne ! »</p>
-
-                <p>Le groupe de guerriers bondit en avant ; à ce moment, avec un grand bruit, Fang Yuan déclencha une détonation de son essence primordiale et fut englouti dans une vague d’énergie aveuglante.</p>
-
-                <p>...</p>
-
-                <p>La pluie de printemps tombait tranquillement sur la montagne Qing Mao. Il était déjà tard dans la nuit, une légère brise soufflait avec une pluie fine. Pourtant, la montagne Qing Mao n’était pas recouverte de ténèbres ; du sommet jusqu’au pied de la montagne, des milliers de minuscules lumières brillaient comme une bande lumineuse. Ces lumières provenaient de grands bâtiments sur pilotes.</p>
-
-                <p>Sur la montagne se dressait le village Gu Yue, donnant à la vaste montagne solitaire une riche touche de civilisation humaine. Au milieu du village se trouvait un magnifique pavillon. Une grande cérémonie s’y déroulait en ce moment, et les lumières étaient plus brillantes que jamais, rayonnantes de gloire.</p>
-
-                <p>« Ancêtres, veuillez nous bénir ! Nous prions pour que cette cérémonie amène de nombreux jeunes hommes au talent et à l’intelligence exceptionnels, apportant du sang neuf et de l’espoir à nos familles ! » Le chef du clan Gu Yue était un homme d'âge mûr, ses favoris étaient grisonnants et il était vêtu d’une robe blanche de cérémonie, agenouillé sur le sol jaune brunâtre. Son corps était droit, les mains jointes, les yeux fermés et il priait sincèrement.</p>
-
-                <p>Il faisait face à un grand étui noir comportant trois étages, abritant les tablettes commémoratives des ancêtres. De chaque côté des tablettes se trouvait de l'encens en bronze d'où s'échappait une fumée parfumée. Derrière lui se tenaient plus de dix personnes, également agenouillées. Ils portaient des vêtements de cérémonie blancs et étaient les aînés du clan, des membres importants détenant une grande autorité.</p>
-
-                <p>Lorsque la cérémonie fut terminée, la foule se leva lentement et sortit en silence du temple sacré. Dans le couloir, des soupirs de soulagement se firent entendre parmi les aînés et l’atmosphère se détendit.</p>
-
-                <p>« Ah, j’espère que des jeunes talentueux vont émerger. Le clan Gu Yue n’a pas vu un génie apparaître depuis trois ans maintenant. »</p>
-                <p>« Le Village Bai et le Village Xiong ont tous deux vu apparaître de grands talents ces dernières années. Surtout Bai Ning Bing du clan Bai : son talent naturel est terrifiant. »</p>
-
-                <p>En entendant le nom de Bai Ning Bing, les aînés commencèrent à afficher une vive inquiétude. Les qualifications de ce garçon étaient splendides ; en seulement deux ans, il avait déjà atteint le rang 3 de Maître Gu.</p>
-
-                <p>« Mais pour les jeunes qui participeront à la cérémonie cette année, tout espoir n’est pas perdu », ajouta un aîné. « Du côté de la branche de Fang Zhi est apparu un jeune génie. Cet enfant possède une grande sagesse malgré son jeune âge. Ces dernières années, j’ai entendu parler de ses créations poétiques. Quel génie ! »</p>
-
-                <p>Le chef du clan Gu Yue sourit légèrement en entendant ces éloges adressés à Gu Yue Fang Yuan. Si cet enfant montrait un potentiel de rang A, il deviendrait le pilier suprême de leur clan.</p>
-
-                <p>Pendant ce temps, au bord d'une fenêtre dans une bâtisse du village, un jeune homme observait la pluie battante.</p>
-
-                <p>« Le village Gu Yue... il y a 500 ans ?! On dirait bien que le Gu Cigale du Printemps et de l'Automne a réussi... » Fang Yuan observait la nuit calmement, laissant le vent fouetter son jeune corps.</p>
-
-                <p>« Grâce au Gu Cigale du Printemps et de l'Automne, je suis revenu 500 ans en arrière ! » Fang Yuan tendit la main, fixa ses jeunes paumes douces, puis les referma lentement en un poing. « 500 ans d’expérience... tout cela ressemble à un rêve. Mais ce n'en est pas un. »</p>
-            </article>
-        </main>
-
-        <div class="support-section">
-            <p style="margin-bottom: 12px; color: #e0e0e0;">Vous aimez cette traduction ? Soutenez le projet pour accélérer la parution des prochains chapitres !</p>
-            <a href="https://ko-fi.com" target="_blank" class="btn-kofi">☕ Offrir un café sur Ko-fi</a>
+            <p>Alors qu’il disait cela, les souvenirs de sa vie passée sur Terre apparurent devant ses yeux.</p>
+            <p>Il était à l’origine un érudit chinois qui avait transmigré dans ce monde. Il avait enduré une vie difficile pendant 300 ans et avait traversé 200 autres années de domination. Plus de cinq cents ans de sa vie s'étaient écoulés en un clin d’œil.</p>
+            <p>Tant de souvenirs enfouis au plus profond de son cœur recommencèrent à revivre, reprenant forme sous ses yeux.</p>
+            <p>« J’ai échoué à la fin », soupira Fang Yuan intérieurement, mais il n’avait aucun regret.</p>
+            <p>Ce résultat final était quelque chose qu’il avait prévu. Quand il avait pris sa décision au début, il s’était préparé à cela.</p>
+            <p>Être un démon, c’est être impitoyable et cruel, un meurtrier et un destructeur. Il n’y a pas de place dans les Cieux ou sur la Terre pour une telle chose — se transformer en un ennemi du monde implique de faire face aux conséquences.</p>
+            <p>« Si le Gu Cigale du Printemps et de l'Automne que je viens de raffiner fonctionne, alors je serai encore un démon dans ma prochaine vie ! » À cette pensée, Fang Yuan ne put s’empêcher de rire d'un air sauvage.</p>
+            <p class="dialogue">« Vil démon, qu’est-ce qui te fait rire ? »</p>
+            <p class="dialogue">« Faites attention tout le monde, le démon va attaquer dans ses derniers instants ! »</p>
+            <p class="dialogue">« Dépêchez-vous de rendre le Gu Cigale du Printemps et de l'Automne ! »</p>
+            <p>Le groupe de guerriers bondit en avant ; à ce moment, avec un grand bruit, Fang Yuan déclencha une détonation de son essence primordiale et fut englouti dans une vague d’énergie aveuglante.</p>
+            <p>…</p>
+            <p>La pluie de printemps tombait tranquillement sur la montagne Qing Mao.</p>
+            <p>Il était déjà tard dans la nuit, une légère brise soufflait avec une pluie fine.</p>
+            <p>Pourtant, la montagne Qing Mao n’était pas recouverte de ténèbres ; du sommet jusqu’au pied de la montagne, des milliers de minuscules lumières brillaient comme une bande lumineuse.</p>
+            <p>Ces lumières provenaient de grands bâtiments sur pilotes.</p>
+            <p>Sur la montagne se dressait le village Gu Yue*, donnant à la vaste montagne solitaire une riche touche de civilisation humaine.</p>
+            <p>Au milieu du village se trouvait un magnifique pavillon. Une grande cérémonie s’y déroulait en ce moment, et les lumières étaient plus brillantes que jamais, rayonnantes de gloire.</p>
+            <p class="dialogue">« Ancêtres, veuillez nous bénir ! Nous prions pour que cette cérémonie amène de nombreux jeunes hommes au talent et à l’intelligence exceptionnels, apportant du sang neuf et de l’espoir à nos familles ! » Le chef du clan Gu Yue était un homme d'âge mûr, ses favoris étaient grisonnants et il était vêtu d’une robe blanche de cérémonie, agenouillé sur le sol jaune brunâtre. Son corps était droit, les mains jointes, les yeux fermés et il priait sincèrement.</p>
+            <p>Il faisait face à un grand étui noir comportant trois étages, abritant les tablettes commémoratives des ancêtres. De chaque côté des tablettes se trouvait de l'encens en bronze d'où s'échappait une fumée parfumée.</p>
+            <p>Derrière lui se tenaient plus de dix personnes, également agenouillées. Ils portaient des vêtements de cérémonie blancs et étaient les aînés du clan, des membres importants détenant une grande autorité.</p>
+            <p>Après les prières, le chef du clan Gu Yue s'inclina, ses deux mains pressées contre le sol, son front touchant le sol jaune brunâtre dans un son étouffé.</p>
+            <p>Derrière lui, les aînés du clan le suivirent solennellement et silencieusement.</p>
+            <p>La salle résonna du bruit léger des fronts frappant le sol.</p>
+            <p>Lorsque la cérémonie fut terminée, la foule se leva lentement et sortit en silence du temple sacré.</p>
+            <p>Dans le couloir, des soupirs de soulagement se firent entendre parmi les aînés et l’atmosphère se détendit. Le niveau des discussions augmenta peu à peu.</p>
+            <p class="dialogue">« Le temps passe trop vite. En un clin d’œil, une année s’est écoulée. »</p>
+            <p class="dialogue">« Je me souviens encore parfaitement de la cérémonie précédente. »</p>
+            <p class="dialogue">« Demain, c’est le début de la grande cérémonie annuelle. Je me demande quel sang neuf va apparaître cette année pour le clan ? »</p>
+            <p class="dialogue">« Ah, j’espère que des jeunes talentueux vont émerger. Le clan Gu Yue n’a pas vu un génie apparaître depuis trois ans maintenant. »</p>
+            <p class="dialogue">« Le Village Bai et le Village Xiong ont tous deux vu apparaître de grands talents ces dernières années. Surtout Bai Ning Bing du clan Bai : son talent naturel est terrifiant. »</p>
+            <p>En entendant le nom de Bai Ning Bing, les aînés commencèrent à afficher une vive inquiétude.</p>
+            <p>Les qualifications de ce garçon étaient splendides ; en seulement deux ans, il avait déjà atteint le rang 3 de Maître Gu.</p>
+            <p>Parmi la jeune génération, il était de loin le plus remarquable, au point que même la génération plus âgée se sentait sous pression face à ce jeune homme prometteur.</p>
+            <p>Avec le temps, il deviendrait inévitablement le pilier du clan Bai. Personne ne doutait de ce fait.</p>
+            <p class="dialogue">« Mais pour les jeunes qui participeront à la cérémonie cette année, tout espoir n’est pas perdu. »</p>
+            <p class="dialogue">« Tu as raison, du côté de la branche de Fang Zhi est apparu un jeune génie, capable de parler après trois mois et de marcher après quatre mois. Dommage que ses parents soient morts prématurément ; il est désormais élevé par son oncle et sa tante. »</p>
+            <p class="dialogue">« Oui, cet enfant possède une grande sagesse malgré son jeune âge. Ces dernières années, j’ai entendu parler de ses créations poétiques : Jiang Jin Jiu, Yong Mei et Jiang Cheng Zi. Quel génie ! »</p>
+            <p>Le chef du clan Gu Yue fut le dernier à sortir du temple ancestral. Après avoir lentement refermé la porte, il entendit les discussions animées des aînés dans le couloir.</p>
+            <p>Il sut immédiatement qu’ils discutaient du jeune homme connu sous le nom de Gu Yue Fang Yuan.</p>
+            <p>En tant que chef de clan, il était naturel d'accorder de l'attention aux jeunes remarquables. Et il se trouvait que Gu Yue Fang Yuan était le plus prometteur de la nouvelle génération.</p>
+            <p>L’expérience avait montré que ceux qui faisaient preuve d'une intelligence exceptionnelle dès leur plus jeune âge possédaient souvent des aptitudes supérieures pour la cultivation.</p>
+            <p>« Si cet enfant montre un potentiel de rang A, avec de l'attention, il pourrait même rivaliser avec Bai Ning Bing. Même s’il était de rang B, il pourrait devenir une bannière du Clan Gu Yue. Mais avec une telle précocité, il est très probable qu’il soit de rang A. » Avec cette pensée, le chef du clan Gu Yue sourit légèrement.</p>
+            <p>Feignant de tousser, il s'adressa aux aînés du clan : « Tout le monde, il est tard. Vous devriez tous vous reposer ce soir pour la cérémonie d’ouverture de demain afin d'être au maximum de votre énergie. »</p>
+            <p>À ces mots, les aînés se figeèrent. Ils se regardèrent avec une pointe de méfiance dans les yeux.</p>
+            <p>Les paroles du chef de clan étaient bienveillantes, mais tout le monde en comprenait le sous-entendu : chaque année, pour recruter ces jeunes génies, les aînés se livraient à des luttes féroces.</p>
+            <p>Il fallait être bien reposé avant que les hostilités ne commencent.</p>
+            <p>C’était d'autant plus vrai pour Gu Yue Fang Yuan, dont le potentiel était probablement de rang A. Sans compter qu'il était orphelin de ses deux parents et qu'il était le dernier descendant de sa branche : si une faction parvenait à le recruter et à l'élever, cela lui assurerait un siècle de prospérité !</p>
+            <p class="dialogue">« Cependant, je tiens à être clair, prévint le chef de clan. Lorsque vous rivaliserez pour les jeunes, faites-le de manière juste et équitable. Aucun complot ni aucune action portant atteinte à l’unité du clan ne sera toléré. »</p>
+            <p class="dialogue">« Nous n’oserions pas. »</p>
+            <p class="dialogue">« Nous garderons cela à l’esprit. »</p>
+            <p class="dialogue">« Dans ce cas, nous vous souhaitons bonne nuit, Chef de Clan. »</p>
+            <p>Les aînés du clan se dispersèrent lentement.</p>
+            <p>Peu après, le long couloir devint silencieux. La brise de la pluie printanière souffla par la fenêtre, et le chef du clan s'en approcha doucement.</p>
+            <p>Aussitôt, il respira l’air frais et humide de la montagne. C’était extrêmement rafraîchissant.</p>
+            <p>Depuis le troisième étage du pavillon, il pouvait contempler la moitié du village Gu Yue.</p>
+            <p>Bien qu'il fût tard dans la nuit, des lumières brillaient encore dans la plupart des habitations. C’était inhabituel.</p>
+            <p>Demain allait se dérouler la cérémonie d’ouverture et tout le monde se sentait concerné. Une atmosphère à la fois festive et tendue enveloppait le cœur des membres du clan, et beaucoup ne trouvaient pas le sommeil.</p>
+            <p>« Voilà les espoirs de notre avenir », murmura le chef de clan en observant les nombreuses lumières scintiller.</p>
+            <p>Au même moment, une autre paire d’yeux limpides contemplait en silence ces mêmes lumières dans la nuit, empreinte de sentiments complexes.</p>
+            <p>« Le village Gu Yue... il y a 500 ans ?! On dirait bien que le Gu Cigale du Printemps et de l'Automne a réussi... » Fang Yuan observait la nuit calmement, debout près de la fenêtre, laissant le vent fouetter son jeune corps.</p>
+            <p>La particularité du Gu Cigale du Printemps et de l'Automne était de pouvoir remonter le temps. Dans le classement des dix grands Gu mystiques, il était classé septième — ce n’était définitivement pas une créature ordinaire.</p>
+            <p>En d'autres termes : il venait de renaître.</p>
+            <p>« Grâce au Gu Cigale du Printemps et de l'Automne, je suis revenu 500 ans en arrière ! » Fang Yuan tendit la main, fixa ses jeunes paumes douces, puis les referma lentement en un poing, embrassant cette réalité de toutes ses forces.</p>
+            <p>Le crépitement de la pluie frappait doucement le rebord de la fenêtre. Il ferma lentement les yeux, puis les rouvrit après un long moment avant de soupirer : « 500 ans d’expérience... tout cela ressemble à un rêve. »</p>
+            <p>Mais il le savait pertinemment : ce n’était aucunement un rêve.</p>
         </div>
 
-        <nav class="nav-bottom">
-            <span class="btn-nav disabled">← Précédent</span>
-            <a href="index.html" class="btn-nav">Sommaire</a>
-            <a href="chapitre-2.html" class="btn-nav">Suivant →</a>
-        </nav>
-
-        <div id="cusdis_thread"
-          data-host="https://cusdis.com"
-          data-app-id="0400387f-9daa-413e-a461-495c8361c09e"
-          data-page-id="chapitre-1"
-          data-page-url="chapitre-1.html"
-          data-page-title="Chapitre 1">
+        <div class="translation-notes">
+            <h3>Notes de traduction</h3>
+            <p><strong>Gu Yue :</strong> Gu Yue (古月) signifie littéralement « Ancienne Lune » en chinois. Le clan possède ainsi une forte affinité avec la lune. Le caractère chinois utilisé pour le nom « Gu Yue » est différent du caractère chinois utilisé pour désigner les insectes mystiques « Gu » (虫).</p>
         </div>
-        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
+        <div class="widgets">
+            <div class="kofi-container">
+                <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+                <script type='text/javascript'>kofiwidget2.init('Soutenez-moi sur Ko-fi', '#8b0000', 'YOUR_KOFI_ID');kofiwidget2.draw();</script>
+            </div>
+
+            <div id="cusdis_thread"
+              data-host="https://cusdis.com"
+              data-app-id="YOUR_CUSDIS_APP_ID"
+              data-page-id="chapitre-1-fr"
+              data-page-url=""
+              data-page-title="Chapitre 1 - FR">
+            </div>
+            <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+        </div>
     </div>
 
     <script>
-        function changeFontSize(size) {
-            const content = document.getElementById('chapitre-text');
-            content.classList.remove('text-small', 'text-medium', 'text-large');
-            content.classList.add('text-' + size);
-        }
         function toggleTheme() {
-            document.body.classList.toggle('light-mode');
+            document.body.classList.toggle('dark-theme');
         }
     </script>
 </body>

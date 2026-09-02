@@ -3,100 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapitre 2 : L'histoire de deux vies</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Chapitre 2 - Revered Insanity</title>
+    <style>
+        :root {
+            --bg-color: #f4f1ea;
+            --text-color: #2b2b2b;
+            --card-bg: #ffffff;
+            --accent-color: #8b0000;
+            --border-color: #e0dace;
+            --note-bg: #f9f7f1;
+        }
+
+        body.dark-theme {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --accent-color: #ff4d4d;
+            --border-color: #333333;
+            --note-bg: #181818;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .content p {
+            margin-bottom: 1.2em;
+            text-align: justify;
+        }
+
+        .dialogue {
+            font-style: italic;
+        }
+
+        .widgets {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .kofi-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <nav class="nav-top">
-                <a href="chapitre-1.html" class="btn-nav">← Précédent</a>
-                <a href="index.html" class="btn-nav">Sommaire</a>
-                <a href="chapitre-3.html" class="btn-nav">Suivant →</a>
-            </nav>
-        </header>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Thème</button>
 
-        <main>
-            <div class="reader-controls">
-                <button class="btn-control" onclick="changeFontSize('small')">A-</button>
-                <button class="btn-control" onclick="changeFontSize('medium')">A</button>
-                <button class="btn-control" onclick="changeFontSize('large')">A+</button>
-                <button class="btn-control" onclick="toggleTheme()">🌓 Thème</button>
+    <div class="container">
+        <div class="header">
+            <h1>Chapitre 2 – Remonter le temps avec 500 ans de connaissances</h1>
+        </div>
+
+        <div class="content">
+            <p>Une légende racontait qu’il existait dans ce monde une Rivière du Temps. Elle soutenait le flux et la circulation du temps dans le monde. En utilisant le pouvoir du Gu Cigale du Printemps et de l'Automne, on pouvait remonter le courant et retourner dans le passé.</p>
+            <p>Il y avait eu beaucoup d’opinions contradictoires sur cette légende. Beaucoup n’y croyaient pas ou restaient sceptiques.</p>
+            <p>Très peu de gens osaient y croire en réalité.</p>
+            <p>Parce que chaque fois que l’on utilisait le Gu Cigale du Printemps et de l'Automne, il fallait payer de sa vie, laissant son corps tout entier et sa cultivation devenir la force motrice nécessaire pour libérer son véritable pouvoir.</p>
+            <p>Un tel prix était tout simplement trop élevé. Mais ce que les gens ne pouvaient pas accepter, c’était le fait qu’après avoir payé de leur vie, ils ne savaient même pas quel en serait le résultat.</p>
+            <p>Ainsi, même si quelqu’un possédait le Gu Cigale du Printemps et de l'Automne, il n’oserait pas l’utiliser sans discernement. Et si les rumeurs étaient fausses ? Et si ce n’était qu'une arnaque ?</p>
+            <p>Si Fang Yuan n’avait pas été cul-de-sac, il ne l’aurait pas utilisé de façon si précipitée non plus. Mais désormais, Fang Yuan était pleinement convaincu — la réalité des faits s'était imposée sous ses yeux et elle était indéniable. Il venait vraiment de renaître !</p>
+            <p>« C’est juste dommage… Dès le début, j’avais gâché une quantité absurde d’efforts, tuant des centaines de milliers de personnes, provoquant la fureur des Cieux et m’attirant la vengeance du monde entier. J’ai traversé d'innombrables souffrances et épreuves pour finalement réussir à raffiner ce bon Gu… » pensa Fang Yuan avec un soupir.</p>
+            <p>Même s’il venait de renaître, le Gu Cigale du Printemps et de l'Automne ne l’avait pas accompagné.</p>
+            <p>Les humains étaient les plus doués parmi les milliers de créatures, mais le Gu était l’essence des Cieux et de la Terre.</p>
+            <p>Les Gu possédaient des milliers de formes et de tailles, d’une variété étrange et mystérieuse — il y en avait trop pour les compter. Certains Gu, après avoir été utilisés une, deux ou même trois fois, se dissipaient complètement. D'autres pouvaient être réutilisés encore et encore tant qu’ils n’étaient pas poussés au-delà de leurs limites.</p>
+            <p>Cela dit, il était probable que le Gu Cigale du Printemps et de l'Automne faisait partie de ceux qui ne pouvaient être utilisés qu’une seule fois avant de disparaître définitivement.</p>
+            <p>« Mais même s’il n’est plus là, je peux encore en raffiner un autre. Je l’ai fait dans ma vie précédente, pourquoi ne pourrais-je pas le refaire dans cette vie ? » Après avoir mis de côté ces regrets, le cœur de Fang Yuan s'enflamma de nouveau d’ambition et de détermination.</p>
+            <p>Pouvoir renaître rendait la perte du Gu parfaitement acceptable.</p>
+            <p>Sans compter qu’il avait conservé quelque chose d'inestimable avec lui — il n’avait donc pas tout perdu.</p>
+            <p>Ce trésor précieux n'était autre que ses 500 ans de souvenirs et d’expérience.</p>
+            <p>Dans sa mémoire se trouvait une multitude de trésors et d’objets précieux que personne n’avait encore découverts à cette époque. Il pouvait anticiper les grands événements et les tournants majeurs de l’histoire. Il connaissait un nombre incalculable de figures : des experts cachés, des génies exceptionnels, et d'autres qui n’étaient même pas encore nés.</p>
+            <p>De plus, ces 500 ans contenaient des souvenirs d’une cultivation rigoureuse et une riche expérience du combat.</p>
+            <p>Avec tous ces souvenirs et cette expérience, il maîtrisait la situation globale et les opportunités à venir. Avec une bonne planification, il pouvait agir avec force et précision. Prendre une longueur d’avance et dépasser les limites précédentes ne poserait aucun problème !</p>
+            <p>« Alors, comment vais-je m'y prendre… » Fang Yuan était extrêmement pragmatique. Il rassembla ses pensées et observa la pluie nocturne par la fenêtre pour méditer. À cette réflexion, les choses commencèrent à se compliquer. Ses sourcils se froncèrent davantage.</p>
+            <p>500 ans, c’était une longue période. Même en laissant de côté les souvenirs flous impossibles à se remémorer, se souvenir des emplacements cachés des trésors ou des rencontres particulières demandait un grand effort. Le problème principal résidait dans le fait que ces endroits étaient séparés par de longues distances et n’étaient accessibles qu’à des moments précis.</p>
+            <p>« Le plus important reste la cultivation. Actuellement, je n’ai même pas ouvert ma Mer Primordiale, je n’ai pas encore entamé la voie d'un Maître Gu. Je ne suis qu’un mortel ! Je dois me dépêcher de cultiver et saisir les opportunités pour en tirer le meilleur avantage. »</p>
+            <p>Sans oublier que nombre de ces trésors cachés étaient inutilables sans des fondations appropriées. S'y rendre directement reviendrait à se jeter dans la gueule du loup.</p>
+            <p>Le premier défi face à lui était donc la cultivation.</p>
+            <p>Il devait renforcer ses fondations aussi vite que possible. S’il progressait aussi lentement que dans sa vie antérieure, il serait trop tard.</p>
+            <p>« Pour cultiver le plus rapidement possible, je dois exploiter les ressources du clan. Dans mon état actuel, je n’ai ni la force ni la capacité de traverser ces montagnes dangereuses. Même un simple sanglier sauvage pourrait me coûter la vie. Si j’atteins le niveau d'un Maître Gu de Rang 3, j’aurai les moyens de me protéger et de quitter la montagne. »</p>
+            <p>À travers les yeux d’un homme de 500 ans ayant arpenté la voie démoniaque, la montagne Qing Mao était bien trop petite, et le village Gu Yue ressemblait à une cage.</p>
+            <p>Mais bien que la cage restreignît la liberté, ses barreaux solides apportaient une forme de sécurité.</p>
+            <p>« En attendant, je vais rester dans cette cage. Dès que j’aurai atteint le Rang 3 de Maître Gu, je pourrai quitter cette montagne misérable. Heureusement, demain a lieu la Cérémonie d’Éveil, je pourrai commencer ma formation de Maître Gu peu après. »</p>
+            <p>À la pensée de la Cérémonie d’Éveil, de vieux souvenirs enfouis dans son cœur refirent surface.</p>
+            <p>« Le talent, hein… » ricana-t-il, le regard rivé à travers la fenêtre.</p>
+            <p>À cet instant, la porte de sa chambre s’ouvrit doucement et un jeune adolescent entra.</p>
+            <p class="dialogue">« Grand frère, pourquoi es-tu debout sous la pluie près de la fenêtre ? »</p>
+            <p>Le jeune homme était mince, légèrement plus petit que Fang Yuan, et lui ressemblait énormément. Lorsque Fang Yuan tourna la tête vers lui, un regard complexe traversa ses yeux.</p>
+            <p>« C’est toi… mon frère jumeau. » Il haussa les sourcils et retrouva son air froid et indifférent.</p>
+            <p>Fang Zheng baissa la tête pour fixer ses pieds ; c’était sa posture habituelle.</p>
+            <p class="dialogue">« Grand frère, j’ai vu que ta fenêtre était ouverte, alors je suis venu la fermer. Demain, c’est la Cérémonie d’Éveil, il est tard et tu n’es pas encore couché. Si mon oncle et ma tante le savaient, ils seraient inquiets. »</p>
+            <p>Fang Zheng n’était pas surpris par la froideur de Fang Yuan. Depuis son enfance, son grand frère avait toujours été ainsi. Parfois, il se demandait si tous les génies étaient différents des gens ordinaires. Bien qu’il possédât le même visage que son frère aîné, il se sentait insignificant comme une fourmi à ses côtés.</p>
+            <p>Ils étaient pourtant nés de la même mère, au même moment. Pourquoi les Cieux étaient-ils si injustes ? Son frère aîné avait été béni d'un talent éclatant, tandis que lui-même restait aussi ordinaire qu’un simple caillou.</p>
+            <p>Autour de lui, tout le monde disait : « C’est le petit frère de Fang Yuan… ». Sa tante et son oncle lui répétaient sans cesse de prendre exemple sur son grand frère. Parfois, en se regardant dans le miroir, il ressentait du dégoût face à son propre visage.</p>
+            <p>Ces pensées s'étaient accumulées jour et nuit au plus profond de son cœur pendant des années. Comme une pierre géante lui pesant sur la poitrine, Fang Zheng baissait la tête de plus en plus au fil du temps et devenait de plus en plus silencieux.</p>
+            <p>« Inquiets… » À la mention de sa tante et de son oncle, Fang Yuan rit intérieurement. Il se souvenait très clairement de la façon dont ses parents de ce monde avaient perdu la vie lors d'une mission du clan. À l'âge de trois ans seulement, son frère et lui étaient devenus orphelins.</p>
+            <p>Sous prétexte de les élever, leur tante et leur oncle s’étaient emparés de l’héritage laissé par leurs parents tout en leur infligeant un traitement dur.</p>
+            <p>Il avait initialement prévu de mener une vie normale, de dissimuler ses capacités et d’attendre son heure. Cependant, face à la dureté de sa vie, Fang Yuan n’avait eu d’autre choix que de révéler une partie de son talent.</p>
+            <p>Ce soi-disant talent n’était dû qu’à son âme mature possédant les poèmes anciens les plus célèbres de la Terre.</p>
+            <p>Grâce à cela, il était parvenu à émerveiller son entourage et à attirer l’attention. En raison de la pression du monde extérieur, le jeune Fang Yuan avait pris la décision de garder une expression froide et distante pour se protéger, réduisant ainsi les risques de révéler ses secrets. Au fil du temps, cette froideur était devenue une habitude.</p>
+            <p>Ainsi, sa tante et son oncle s'étaient adoucis envers son frère et lui. Les années passant, l’avenir devenait plus prometteur et ils recevaient un meilleur traitement. Ce n’était pas de l’amour, mais un investissement.</p>
+            <p>C’était drôle de voir que son petit frère n’avait jamais percé la vérité à jour ; non seulement il s’était laissé tromper par leur tante et leur oncle, mais il avait aussi commencé à nourrir de la rancœur. Bien qu’il ressemblât pour l'instant à un garçon bon et honnête, dans les souvenirs de Fang Yuan, lorsque le potentiel de son frère avait été révélé, le clan avait déployé tous ses efforts pour l’élever.</p>
+            <p>Après cela, toute la jalousie et la rancœur accumulées s’étaient libérées, et Fang Zheng n'avait cessé de cibler et d'opprimer son propre frère aîné.</p>
+            <p>Quant au rang de Fang Yuan, il n’était que de Rang C.</p>
+            <p>Le destin aimait jouer des tours.</p>
+            <p>Une paire de jumeaux : l’aîné n’avait qu’un talent de Rang C, mais avait été considéré comme un génie pendant plus de dix ans. À l’inverse, le plus jeune, toujours délaissé, possédait une aptitude de Rang A.</p>
+            <p>Les résultats de la Cérémonie d’Éveil avaient provoqué un choc au sein du clan. Le traitement réservé aux deux frères s’était brutalement inversé.</p>
+            <p>Le plus jeune était devenu tel un dragon s’élevant vers les Cieux ; le frère aîné, un phénix tombé à terre.</p>
+            <p>S'en étaient suivies de nombreuses difficultés causées par son propre frère, le regard glacial de sa tante et de son oncle, et le mépris du clan.</p>
+            <p>Éprouvait-il de la haine ?</p>
+            <p>Fang Yuan avait haï cela dans sa vie passée. Il avait haï son propre manque de talent, la cruauté du clan et l'injustice du destin. Mais désormais, fort de ses 500 ans d’expérience, en observant le passé avec du recul, son cœur restait calme, sans la moindre trace de rancœur.</p>
+            <p>Qu’y avait-il à gagner à nourrir de la haine ?</p>
+            <p>En se plaçant d'un autre point de vue, il pouvait comprendre son frère cadet, sa tante, son oncle, et même les ennemis qui l’avaient attaqué 500 ans plus tard.</p>
+            <p>Les forts devorent les faibles, et seuls les plus aptes survient ; telles étaient les règles de ce monde. Chacun suivait ses ambitions, luttant pour saisir les opportunités qui s’offraient à lui.</p>
+            <p>500 ans d’existence lui avaient permis de comprendre tout cela, son cœur ne visant plus que la quête d’immortalité.</p>
+            <p>Si quelqu’un cherchait à s’interposer — peu importe qui — il le tuerait et continuerait son chemin. L'aspiration dans son cœur était trop vaste. Emprunter cette voie signifiait faire du monde entier son ennemi, avancer seul et semer la mort.</p>
+            <p>Telle était la conclusion de 500 ans de vie.</p>
+            <p>« La vengeance n'est pas mon but, et la voie démoniaque ne concède aucun compromis. » Sur ces mots, il ne put s’empêcher de rire doucement et de jeter un bref coup d’œil à son petit frère.</p>
+            <p>« Tu peux partir. »</p>
+            <p>Le cœur de Fang Zheng tressaillit en sentant le regard de son frère, perçant comme une lame de glace, traverser les profondeurs de son âme.</p>
+            <p>Sous ce regard, il se sentait comme nu dans la neige, incapable de garder le moindre secret.</p>
+            <p class="dialogue">« Alors… à demain. » N’osant pas en dire plus, Fang Zheng referma lentement la porte et s’en alla.</p>
+        </div>
+
+        <div class="widgets">
+            <div class="kofi-container">
+                <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+                <script type='text/javascript'>kofiwidget2.init('Soutenez-moi sur Ko-fi', '#8b0000', 'YOUR_KOFI_ID');kofiwidget2.draw();</script>
             </div>
 
-            <article class="chapitre-content text-medium" id="chapitre-text">
-                <h1>Chapitre 2 : L'histoire de deux vies</h1>
-
-                <p>« Cet endroit est le village Gu Yue, c'est exact », dit Fang Yuan en observant les bâtiments illuminés au loin. « Cinq cents ans... La cérémonie d'ouverture doit se dérouler aujourd'hui. »</p>
-
-                <p>Il ferma les yeux et se concentra sur son ouverture spirituelle, observant la situation à l'intérieur. Son ouverture spirituelle était vide. Il n'y avait aucune trace d'essence primordiale, ni aucun Gu.</p>
-
-                <p>Le Gu Cigale du Printemps et de l'Automne, qu'il avait raffiné au prix de tant d'efforts dans sa vie précédente, avait disparu. Cependant, Fang Yuan n'éprouva pas la moindre panique. Il savait que la Cigale était un Gu de rang 6 extrêmement puissant. Après avoir remonté le cours du temps, elle était probablement entrée dans un état d'hibernation profonde au plus profond de son âme pour se régénérer.</p>
-
-                <p>Dans ce monde, la culture repose sur les Gu. L'humanité est l'esprit de toutes les créatures, et les Gu sont l'essence du Ciel et de la Terre.</p>
-
-                <div class="note-traducteur">
-                    <p><strong>Note du traducteur :</strong> Le mot « Gu » désigne des créatures mystiques aux pouvoirs variés dans la culture et la mythologie chinoises. Dans ce monde, ils sont utilisés par les maîtres Gu comme outils, armes ou compagnons pour canaliser l'essence du Ciel et de la Terre.</p>
-                </div>
-
-                <p>Il existe d'innombrables espèces de Gu dans ce monde. Certains peuvent contrôler le feu, d'autres la glace ; certains permettent d'augmenter la force physique, tandis que d'autres prolongent la durée de vie.</p>
-
-                <p>Les humains ne possèdent pas une force physique impressionnante à la naissance comme les bêtes sauvages. Ils n'ont ni griffes acérées ni crocs venimeux. Pour survivre face aux dangers de la nature, les ancêtres de l'humanité ont appris à capturer et à utiliser les Gu.</p>
-
-                <p>Un Maître Gu commence son parcours au rang 1 et peut s'élever jusqu'au rang 9. Au-delà du rang 9 se trouve le niveau des Vénérables, des êtres quasi-immortels capables de secouer le Ciel et la Terre.</p>
-
-                <p>Dans sa vie passée, Fang Yuan avait atteint le rang 6, devenant un Immortel Gu. Il avait fondé la Secte du Démon Sanglant, régné sur une vaste région et fait trembler d'innombrables factions. Malheureusement, pour raffiner le Gu Cigale du Printemps et de l'Automne, il avait dû sacrifier des millions de personnes, s'attirant la colère des factions de la justice. Encerclé, il n'avait eu d'autre choix que de tenter le tout pour le tout.</p>
-
-                <p>« Mon pari a réussi », murmura Fang Yuan avec un léger sourire. « Je suis revenu à l'âge de 15 ans. C'est l'année où j'ai éveillé mon ouverture spirituelle et commencé mon parcours. »</p>
-
-                <p>Sa vie passée de 500 ans lui apportait une expérience inestimable. Il connaissait les opportunités à venir, les secrets cachés de la montagne Qing Mao et l'emplacement de trésors légendaires. Cependant, sa situation actuelle était fragile : il n'était encore qu'un mortel sans pouvoir.</p>
-
-                <p>« Demain aura lieu la Cérémonie d'Éveil », pensa-t-il. « Tout le monde s'attend à ce que j'aie une aptitude de rang A. » Il laissa échapper un rire moqueur. Dans sa vie antérieure, il savait parfaitement quelle était son aptitude réelle : un potentiel de rang C.</p>
-
-                <p>Cette révélation avait autrefois détruit son image de génie et laissa place à son frère jumeau, Gu Yue Fang Zheng, qui s'était révélé être le véritable talent de rang A.</p>
-
-                <p>« L'aptitude détermine la vitesse de cultivation », se remémora Fang Yuan. « Mais elle ne détermine pas tout. Dans ma première vie, j'ai commencé avec un rang C et je suis quand même devenu un Immortel Gu de rang 6 ! »</p>
-
-                <p>Fang Yuan se détourna de la fenêtre et marcha vers son lit. « Le chemin du démon est un chemin d'épreuves solitaires. Seule la vie éternelle vaut la peine d'être poursuivie. »</p>
-
-                <div class="note-traducteur">
-                    <p><strong>Note du Traducteur (NDT) - Sur le nom Gu Yue (古月) :</strong><br>
-                    Le nom du clan <em>Gu Yue</em> s'écrit avec les sinogrammes 古 (Gu - Ancien/Antique) et 月 (Yue - Lune), signifiant ainsi la « Lune Ancienne ». De plus, lorsqu'on assemble verticalement ces deux caractères (古 + 月), ils forment le caractère 胡 (Hu), qui fait référence aux peuples nomades barbares des régions de l'Ouest dans la mythologie chinoise. Ce double sens illustre à la fois l'héritage mystique du clan lié au culte de la lune et son caractère solitaire, féroce et indépendant face au reste du monde.
-                    </p>
-                </div>
-            </article>
-        </main>
-
-        <div class="support-section">
-            <p style="margin-bottom: 12px; color: #e0e0e0;">Vous aimez cette traduction ? Soutenez le projet pour accélérer la parution des prochains chapitres !</p>
-            <a href="https://ko-fi.com" target="_blank" class="btn-kofi">☕ Offrir un café sur Ko-fi</a>
+            <div id="cusdis_thread"
+              data-host="https://cusdis.com"
+              data-app-id="YOUR_CUSDIS_APP_ID"
+              data-page-id="chapitre-2-fr"
+              data-page-url=""
+              data-page-title="Chapitre 2 - FR">
+            </div>
+            <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
         </div>
-
-        <nav class="nav-bottom">
-            <a href="chapitre-1.html" class="btn-nav">← Précédent</a>
-            <a href="index.html" class="btn-nav">Sommaire</a>
-            <a href="chapitre-3.html" class="btn-nav">Suivant →</a>
-        </nav>
-
-        <div id="cusdis_thread"
-          data-host="https://cusdis.com"
-          data-app-id="0400387f-9daa-413e-a461-495c8361c09e"
-          data-page-id="chapitre-2"
-          data-page-url="chapitre-2.html"
-          data-page-title="Chapitre 2">
-        </div>
-        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </div>
 
     <script>
-        function changeFontSize(size) {
-            const content = document.getElementById('chapitre-text');
-            content.classList.remove('text-small', 'text-medium', 'text-large');
-            content.classList.add('text-' + size);
-        }
         function toggleTheme() {
-            document.body.classList.toggle('light-mode');
+            document.body.classList.toggle('dark-theme');
         }
     </script>
 </body>

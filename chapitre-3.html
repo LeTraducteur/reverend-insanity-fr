@@ -3,108 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapitre 3 : La Cérémonie d'Éveil</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Chapitre 3 - Revered Insanity</title>
+    <style>
+        :root {
+            --bg-color: #f4f1ea;
+            --text-color: #2b2b2b;
+            --card-bg: #ffffff;
+            --accent-color: #8b0000;
+            --border-color: #e0dace;
+            --note-bg: #f9f7f1;
+        }
+
+        body.dark-theme {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --accent-color: #ff4d4d;
+            --border-color: #333333;
+            --note-bg: #181818;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .content p {
+            margin-bottom: 1.2em;
+            text-align: justify;
+        }
+
+        .dialogue {
+            font-style: italic;
+        }
+
+        .widgets {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .kofi-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <nav class="nav-top">
-                <a href="chapitre-2.html" class="btn-nav">← Précédent</a>
-                <a href="index.html" class="btn-nav">Sommaire</a>
-                <span class="btn-nav disabled">Suivant →</span>
-            </nav>
-        </header>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Thème</button>
 
-        <main>
-            <div class="reader-controls">
-                <button class="btn-control" onclick="changeFontSize('small')">A-</button>
-                <button class="btn-control" onclick="changeFontSize('medium')">A</button>
-                <button class="btn-control" onclick="changeFontSize('large')">A+</button>
-                <button class="btn-control" onclick="toggleTheme()">🌓 Thème</button>
+    <div class="container">
+        <div class="header">
+            <h1>Chapitre 3 : Veuillez simplement vous pousser et dégager le chemin</h1>
+        </div>
+
+        <div class="content">
+            <p><em>Bang, Bang, Bang.</em></p>
+
+            <p>Le gardien de nuit qui patrouillait frappa ses bâtons de bois en rythme.</p>
+
+            <p>Le son se répandit à travers les maisons sur pilotes. Fang Yuan ouvrit ses paupières sèches tandis qu’il pensait silencieusement : <em>« Il est déjà l’heure, juste avant l’aube. »</em></p>
+
+            <p>Il était resté allongé dans son lit à réfléchir toute la nuit, élaborant de nombreux plans. Il n’avait probablement dormi qu’un peu plus de deux heures. Son corps n’ayant pas encore commencé la cultivation, son énergie n’était pas si vigoureuse, et son corps comme son esprit demeuraient enveloppés d’épuisement.</p>
+
+            <p>Cependant, fort de ses cinq cents ans d’expérience, Fang Yuan avait depuis longtemps forgé une détermination d'acier. Ce genre de fatigue due au manque de sommeil n’était rien pour lui.</p>
+
+            <p>Il repoussa immédiatement la fine couverture de soie et se leva proprement. Il ouvrit la fenêtre et constata que la pluie printanière s’était arrêtée.</p>
+
+            <p>Un mélange de senteurs de terre, d’arbres et de fleurs sauvages l'accueillit. Fang Yuan sentit ses idées s’éclaircir progressivement. À ce moment précis, le soleil ne s’était pas encore levé ; le ciel arborait toujours un bleu foncé profond, entre ombre et lumière.</p>
+
+            <p>En regardant autour de lui, les hautes maisons faites de bambou vert et de bois, contrastant avec la montagne, formaient une mer d'un vert pâle.</p>
+
+            <p>Les maisons sur pilotes comportaient au moins deux étages, une structure unique propre aux habitants de la montagne en raison du terrain accidenté. Le premier niveau repose sur de massifs pieux en bois, tandis que le deuxième étage est réservé à l'habitation. Fang Yuan et son frère Fang Zheng résidaient tous deux au deuxième étage.</p>
+
+            <p class="dialogue">« Jeune Maître Fang Yuan, vous êtes réveillé ! Je vais monter m'occuper de votre toilette », s’éleva une voix de jeune fille depuis le bas.</p>
+
+            <p>En baissant les yeux, Fang Yuan vit sa propre servante, Shen Cui.</p>
+
+            <p>Son apparence n’était que légèrement supérieure à la moyenne, mais elle s’habillait avec soin. Shen Cui portait une robe verte à manches longues avec un pantalon, des chaussures brodées aux pieds, et ses cheveux noirs étaient retenus par une épingle à cheveux ornée de perles. De la tête aux pieds, son corps rayonnait d’une vitalité juvénile.</p>
+
+            <p>Elle regarda joyeusement Fang Yuan tout en portant une bassine d’eau, puis monta les escaliers. L’eau destinée à lui laver le visage était à la température idéale. Après s’être rincé la bouche, il utilisa une brindille de saule enduite de sel de neige pour se nettoyer les dents.</p>
+
+            <p>Shen Cui l'attendait doucement, le visage éclairé par un sourire et les yeux vifs comme le printemps. Une fois la toilette terminée, elle aida Fang Yuan à s’habiller, ses seins dodus frôlant son coude et son dos à plusieurs reprises au cours du processus.</p>
+
+            <p>Le visage de Fang Yuan ne montra aucune réaction ; son cœur restait aussi calme que l’eau d'un lac.</p>
+
+            <p>Cette servante n’était rien d’autre que les yeux et les oreilles de sa tante et de son oncle, une fille vaine et sans cœur. Dans sa vie passée, elle l’avait captivé, mais après la cérémonie d’éveil, lorsque son statut s'était effondré, elle s'était empressée de lui tourner le dos et de lui lancer d’innombrables regards dédaigneux.</p>
+
+            <p>Lorsque Fang Zheng arriva, il fut juste à temps pour voir Shen Cui lisser les plis des vêtements sur la poitrine de Fang Yuan. Ses yeux étincelèrent d'une pointe de jalousie.</p>
+
+            <p>Durant ces années passées à vivre avec son frère aîné sous la garde de Fang Yuan, il avait lui aussi une servante à son service. Cependant, la sienne n’était pas une jeune fille comme Shen Cui, mais une vieille femme imposante et adipeuse.</p>
+
+            <p><em>« Je me demande quel jour Shen Cui s'occupera de moi de la sorte... Je me demande ce que ça fait »</em>, pensa Fang Zheng, sans toutefois oser l'exprimer.</p>
+
+            <p>L’amour partial de sa tante et de son oncle envers Fang Yuan n’était un secret pour personne. À l’origine, Fang Zheng n’avait même pas de servante ; c’était Fang Yuan qui avait pris l’initiative d’en réclamer une pour lui.</p>
+
+            <p>Bien qu’il y eût une différence de statut évidente entre maître et serviteur, Fang Zheng n’osait généralement pas sous-estimer Shen Cui. La raison en était que sa mère était la matrone Shen, la suivante personnelle de sa tante et de son oncle. La matrone Shen gérait l'ensemble du domaine et jouissait de la confiance absolue de ses maîtres, ce qui lui conférait une autorité considérable.</p>
+
+            <p class="dialogue">« C'est bon, pas besoin de continuer », dit Fang Yuan en repoussant sans ménagement les petites mains douces de Shen Cui. Ses vêtements étaient ajustés depuis longtemps ; elle ne cherchait qu'à le séduire.</p>
+
+            <p>Aux yeux de Shen Cui et pour assurer son avenir, la possibilité que Fang Yuan possède un talent de Rang A était immense. Si elle parvenait à devenir sa concubine, elle passerait du statut de servante à celui de maîtresse — une ascension sociale remarquable.</p>
+
+            <p>Dans sa vie passée, Fang Yuan s’était laissé berner et avait développé des sentiments pour elle. Mais depuis sa renaissance, son esprit était clair comme de la braise et son cœur froid comme la glace.</p>
+
+            <p class="dialogue">« Tu peux partir. » Fang Yuan ne daigna même pas regarder Shen Cui tandis qu'il ajustait ses propres manches. Cette dernière bouda légèrement, trouvant le comportement mystérieux de Fang Yuan particulièrement étrange et contrariant aujourd'hui. Fière, elle voulut répliquer de façon capricieuse, mais intimidée par son attitude glaciale et distante, elle ouvrit et ferma la bouche plusieurs fois avant de murmurer un « oui » obéissant et de se retirer sans demander son reste.</p>
+
+            <p class="dialogue">« Es-tu prêt ? » demanda Fang Yuan à Fang Zheng.</p>
+
+            <p>Son jeune frère se tenait sur le seuil de la porte, la tête baissée pour fixer ses orteils. Il murmura un léger « Oui ». Fang Zheng était réveillé depuis la quatrième veille, trop nerveux pour se rendormir. Il s’était levé et préparé depuis bien longtemps, ce qui lui valait de sombres cernes sous les yeux.</p>
+
+            <p>Fang Yuan hocha la tête. Dans sa vie antérieure, il ne percevait pas clairement les pensées de son jeune frère, mais dans cette vie-ci, comment pourraient-elles lui échapper ? Pour l'heure, cela n’avait toutefois aucune importance. Il déclara calmement : « Alors allons-y. »</p>
+
+            <p>Les deux frères quittèrent la demeure. En chemin, ils croisèrent de nombreux jeunes de leur âge, tous regroupés par deux ou trois, se dirigeant à toute évidence vers la même destination.</p>
+
+            <p class="dialogue">« Regardez, ce sont les frères Fang ! » Leurs oreilles surprirent des murmures prudents. « Celui qui marche devant, c’est Fang Yuan, celui qui a composé les poèmes », soulignèrent certains d’entre eux.</p>
+
+            <p class="dialogue">« C’est donc lui... Son visage est sans expression, comme s’il n’avait aucun respect pour les autres, exactement comme le disent les rumeurs », dit quelqu’un d’un ton aigre, teinté de jalousie et d’envie.</p>
+
+            <p class="dialogue">« Hmph, si tu avais son talent, tu te le permettrais aussi ! » répliqua un autre froidement, trahissant un certain agacement.</p>
+
+            <p>Fang Zheng écoutait, le visage impassible. Il était depuis longtemps habitué à ce genre de remarques. La tête basse, il emboîtait silencieusement le pas à son frère aîné.</p>
+
+            <p>Désormais, les premières lueurs de l’aube poignaient à l’horizon, projetant l’ombre de Fang Yuan directement sur le visage de son frère. Le soleil se levait peu à peu, mais Fang Zheng avait soudain l’impression de s’enfoncer dans les ténèbres.</p>
+
+            <p>Cette obscurité émanait de son frère aîné. Peut-être que dans cette vie, il ne parviendrait jamais à s’échapper de l'ombre gigantesque et étouffante de son frère.</p>
+
+            <p>Il ressentit une oppression dans la poitrine qui lui rendait la respiration difficile. Ce sentiment détestable lui donnait l'impression de suffoquer !</p>
+
+            <p><em>« Hmph, cette conversation illustre parfaitement le dicton : "Un talent d'exception suscite aisément la jalousie d'autrui" »</em>, pensa Fang Yuan avec un ricanement intérieur en écoutant les ragots.</p>
+
+            <p>Rien d’étonnant à ce que, lorsque son potentiel de Rang C serait révélé, il se retrouve entouré d’ennemis et subisse une froideur méprisante pendant une longue période.</p>
+
+            <p>Derrière lui, il entendait la respiration de Fang Zheng devenir lourde alors que ce dernier tentait de faire la sourde oreille.</p>
+
+            <p>Ce que Fang Yuan n’avait pas réussi à réaliser dans sa vie précédente, il le percevait désormais avec une précision chirurgicale. C’était la perspicacité affûtée qu’il avait acquise au cours de ses cinq cents ans d’existence.</p>
+
+            <p>Il pensa soudain à sa tante et à son oncle, ainsi qu'à leurs manœuvres calculatrices. Lui attribuer Shen Cui pour le surveiller tout en donnant à son jeune frère une vieille nourrice, sans parler des multiples disparités de traitement dans leur quotidien... Toutes ces actions étaient mûrement réfléchies : ils cherchaient à semer la rancœur dans le cœur de son jeune frère pour créer une rupture irréparable entre eux.</p>
+
+            <p>Les hommes ne souffrent pas tant de recevoir peu ; ils s'inquiètent surtout de savoir si le partage est équitable.</p>
+
+            <p>Dans sa vie antérieure, son manque d'expérience et la naïveté de son frère avaient permis à sa tante et à son oncle de réussir leur coup avec brio.</p>
+
+            <p>Après sa renaissance, alors que la cérémonie d’éveil approchait, la situation semblait difficile à redresser au premier abord. Mais avec la ruse et la sagesse qu'il possédait désormais, il ne manquait pas de moyens d'agir.</p>
+
+            <p>Il pourrait réduire son jeune frère au silence absolu, faire de la jeune Shen Cui sa concubine sans attendre, et quant à sa tante, son oncle et les aînés du clan, il possédait des centaines de façons de les terrasser.</p>
+
+            <p><em>« Mais je n’ai aucune envie de perdre mon temps avec ça... »</em> soupira doucement Fang Yuan dans son esprit.</p>
+
+            <p>Et alors s’il s’agissait de son propre frère ? Sans le lien du sang, son frère ne serait qu’un étranger dont il pourrait se débarrasser à tout moment.</p>
+
+            <p>Et alors si Shen Cui était jolie ? Sans amour ni loyauté, elle n'était qu'un simple sac de chair. La prendre pour concubine ? Elle n'en valait pas la peine.</p>
+
+            <p>Et que dire de sa tante, de son oncle ou des aînés du clan ? Ils n'étaient que de simples figurants sur le chemin de son existence. Pourquoi gaspiller la moindre énergie à vouloir les vaincre ?</p>
+
+            <p>Héhé.</p>
+
+            <p><em>« Tant que vous ne vous mettez pas en travers de ma route, vous pouvez simplement vous pousser et dégager le chemin. Je n'ai pas le temps de me soucier de vous. »</em></p>
+        </div>
+
+        <div class="widgets">
+            <div class="kofi-container">
+                <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+                <script type='text/javascript'>kofiwidget2.init('Soutenez-moi sur Ko-fi', '#8b0000', 'YOUR_KOFI_ID');kofiwidget2.draw();</script>
             </div>
 
-            <article class="chapitre-content text-medium" id="chapitre-text">
-                <h1>Chapitre 3 : La Cérémonie d'Éveil</h1>
-
-                <p>Le soleil se levait doucement à l'horizon, diffusant une lueur dorée sur le village Gu Yue. L'air frais du matin portait une odeur de pin et d'humidité, typique de la montagne Qing Mao.</p>
-
-                <p>Aujourd'hui était le jour le plus crucial de l'année pour tous les jeunes de quinze ans du clan : la Cérémonie d'Éveil. C'était l'événement qui scellerait leur destin. Dans ce monde, seuls ceux qui parvenaient à éveiller leur Mer d'Ouverture et possédait des aptitudes de Maître Gu pouvaient prétendre s'élever au-dessus du commun des mortels.</p>
-
-                <p>Devant le grand temple ancestral, des dizaines de jeunes adolescents étaient rassemblés. L'excitation et la nervosité se lisaient sur chaque visage. Parmi eux, la plupart des regards étaient tournés vers deux personnes : Fang Yuan et son frère jumeau, Fang Zheng.</p>
-
-                <p>— Regardez, c'est Fang Yuan ! Le jeune génie du clan ! On dit qu'il composait déjà de la poésie à sept ans...<br>
-                — Il obtiendra sans aucun doute une aptitude de Rang A !<br>
-                — En revanche, son frère jumeau, Fang Zheng, a toujours l'air si timide dans son ombre...</p>
-
-                <p>Fang Zheng baissait la tête, les poings serrés contre ses cuisses, le visage blême sous le poids des comparaisons. À côté de lui, Fang Yuan restait impassible, les yeux profonds et calmes comme l'eau d'un puits millénaire.</p>
-
-                <p>La porte lourde du temple d'ébène s'ouvrit lentement. Un aîné du clan, aux cheveux gris et au regard strict, sortit et ordonna d'une voix résonnante :</p>
-
-                <p>— Le moment est venu ! Entrez dans la salle sacrée !</p>
-
-                <p>Les jeunes s'avancèrent en silence. Au centre de la salle coulait une rivière souterraine dont l'eau scintillait d'une lumière douce : la Rivière des Gu de l'Espoir.</p>
-
-                <p>— Lorsque votre nom sera appelé, vous traverserez la rivière et vous vous avancerez aussi loin que possible, expliqua l'aîné. Plus votre aptitude est élevée, plus vous résisterez à la pression.</p>
-
-                <p>Les appels se succédèrent. Beaucoup obtinrent une aptitude de Rang C ou D. Seuls quelques rares privilégiés décrochèrent un Rang B. Puis, la voix de l'aîné résonna plus fort :</p>
-
-                <p>— Gu Yue Fang Yuan !</p>
-
-                <p>Toute la salle fit silence. Fang Yuan s'avança d'un pas ferme et entra dans la rivière. Des dizaines de Gu de l'Espoir jaillirent de l'eau et pénétrèrent dans son corps. Une sensation de chaleur explosa sous son nombril : sa Mer d'Ouverture venait de naître !</p>
-
-                <p>Un pas... deux pas... trois pas... quatre pas... cinq pas...</p>
-
-                <p>Arrivé au sixième pas, la pression devint insurmontable. Fang Yuan s'arrêta. L'aîné scruta le résultat et déclara d'une voix lourde :</p>
-
-                <p>— Gu Yue Fang Yuan... Aptitude de Rang C. Mer d'Ouverture remplie à 44%.</p>
-
-                <p>La déclaration tomba comme un couperet. Des murmures de déception et des rires moqueurs remplacèrent l'admiration d'autrefois. Fang Yuan sortit de l'eau, son expression parfaitement sereine.</p>
-
-                <p>— Prochain : Gu Yue Fang Zheng !</p>
-
-                <p>Saisi par la panique, Fang Zheng s'avança en tremblant. Mais au fur et à mesure qu'il avançait, la lumière dorée devint aveuglante. Sept pas... huit pas... neuf pas... dix pas !</p>
-
-                <p>L'aîné en lâcha son registre :</p>
-
-                <p>— Aptitude de Rang A ! Mer d'Ouverture remplie à 89% ! Un génie absolu !</p>
-
-                <p>Les acclamations explosèrent dans le temple. Fang Yuan observa son frère exulter sous les éloges de la foule. Un mince sourire mystérieux étira le coin de ses lèvres.</p>
-
-                <p><em>« Le chemin de la vie éternelle ne fait que commencer »</em>, chuchota-t-il.</p>
-            </article>
-        </main>
-
-        <div class="support-section">
-            <p style="margin-bottom: 12px; color: #e0e0e0;">Vous aimez cette traduction ? Soutenez le projet pour accélérer la parution des prochains chapitres !</p>
-            <a href="https://ko-fi.com" target="_blank" class="btn-kofi">☕ Offrir un café sur Ko-fi</a>
+            <div id="cusdis_thread"
+              data-host="https://cusdis.com"
+              data-app-id="YOUR_CUSDIS_APP_ID"
+              data-page-id="chapitre-3-fr"
+              data-page-url=""
+              data-page-title="Chapitre 3 - FR">
+            </div>
+            <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
         </div>
-
-        <nav class="nav-bottom">
-            <a href="chapitre-2.html" class="btn-nav">← Précédent</a>
-            <a href="index.html" class="btn-nav">Sommaire</a>
-            <span class="btn-nav disabled">Suivant →</span>
-        </nav>
-
-        <div id="cusdis_thread"
-          data-host="https://cusdis.com"
-          data-app-id="0400387f-9daa-413e-a461-495c8361c09e"
-          data-page-id="chapitre-3"
-          data-page-url="chapitre-3.html"
-          data-page-title="Chapitre 3">
-        </div>
-        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     </div>
 
     <script>
-        function changeFontSize(size) {
-            const content = document.getElementById('chapitre-text');
-            content.classList.remove('text-small', 'text-medium', 'text-large');
-            content.classList.add('text-' + size);
-        }
         function toggleTheme() {
-            document.body.classList.toggle('light-mode');
+            document.body.classList.toggle('dark-theme');
         }
     </script>
 </body>
