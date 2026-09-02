@@ -1,10 +1,15 @@
 /* ==========================================================================
    1. STYLES GÉNÉRAUX & RÉGLAGES DE BASE
    ========================================================================== */
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
 body {
@@ -16,20 +21,57 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Règle essentielle : rend toutes les images réactives */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
+    width: 100%;
 }
 
 /* ==========================================================================
-   2. NAVIGATION (HAUT & BAS DE PAGE)
+   2. PAGE D'ACCUEIL / HEADER
+   ========================================================================== */
+.site-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.site-header img, .banner-img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    margin: 15px auto;
+    object-fit: cover;
+}
+
+.site-title {
+    font-size: 2.2em;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.site-subtitle {
+    font-size: 1em;
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   3. NAVIGATION (HAUT & BAS DE PAGE)
    ========================================================================== */
 .nav-top, .nav-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
+    gap: 10px;
 }
 
 .btn-nav {
@@ -42,6 +84,7 @@ body {
     border: 1px solid #333333;
     font-weight: 500;
     font-size: 0.95em;
+    text-align: center;
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -59,7 +102,7 @@ body {
 }
 
 /* ==========================================================================
-   3. BARRE D'OUTILS DE LECTURE (GRAND/PETIT & THÈME)
+   4. BARRE D'OUTILS DE LECTURE (TAILLE & THÈME)
    ========================================================================== */
 .reader-controls {
     display: flex;
@@ -92,7 +135,7 @@ body {
 }
 
 /* ==========================================================================
-   4. CONTENU DU CHAPITRE ET GESTION DES TAILLES DE TEXTE
+   5. CONTENU DU CHAPITRE ET TAILLES DE TEXTE
    ========================================================================== */
 .chapitre-content h1 {
     font-size: 1.8em;
@@ -105,6 +148,7 @@ body {
 .chapitre-content p {
     margin-bottom: 18px;
     color: #d1d1d1;
+    word-wrap: break-word;
 }
 
 /* Tailles de texte dynamiques */
@@ -127,10 +171,14 @@ body {
 .note-traducteur {
     background-color: #1a222d;
     border-left: 4px solid #4da6ff;
-    padding: 12px 16px;
+    padding: 14px 18px;
     margin: 25px 0;
     border-radius: 0 6px 6px 0;
     font-size: 0.95em;
+}
+
+.note-traducteur strong {
+    color: #4da6ff;
 }
 
 .note-traducteur p {
@@ -139,13 +187,14 @@ body {
 }
 
 /* ==========================================================================
-   5. MODE CLAIR (LIGHT MODE)
+   6. MODE CLAIR (LIGHT MODE)
    ========================================================================== */
 body.light-mode {
     background-color: #f5f5f7 !important;
     color: #1d1d1f !important;
 }
 
+body.light-mode .site-title,
 body.light-mode .chapitre-content h1 {
     color: #111111 !important;
 }
@@ -193,7 +242,7 @@ body.light-mode .note-traducteur p {
 }
 
 /* ==========================================================================
-   6. SECTION DE SOUTIEN (KO-FI)
+   7. SECTION DE SOUTIEN (KO-FI) & COMMENTAIRES
    ========================================================================== */
 .support-section {
     background: #1a1a1a;
@@ -219,16 +268,12 @@ body.light-mode .note-traducteur p {
     background: #e04b49;
 }
 
-/* ==========================================================================
-   7. PERSONNALISATION DU MODULE CUSDIS (COMMENTAIRES)
-   ========================================================================== */
 #cusdis_thread iframe {
     width: 100% !important;
     min-height: 420px;
     border: none !important;
 }
 
-/* Forcer les couleurs des éléments si Cusdis est injecté hors iframe */
 #cusdis_thread {
     color: #ffffff !important;
     margin-top: 20px;
