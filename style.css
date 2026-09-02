@@ -214,3 +214,10 @@ header p {
         justify-content: center;
     }
 }
+/* Style pour le bouton désactivé (sur le Chapitre 1) */
+.btn-nav.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+    border-color: transparent;
+}
